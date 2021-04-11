@@ -1,0 +1,88 @@
+﻿  events.cpp
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\proton\variant.hpp(322,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\proton\variant.hpp(339,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\proton\variant.hpp(355,1): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\events.cpp(435,79): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\events.cpp(640,60): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  gt.cpp
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\proton\variant.hpp(322,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\proton\variant.hpp(339,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\proton\variant.hpp(355,1): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+  proxy.cpp
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\proton\variant.hpp(322,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\proton\variant.hpp(339,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\proton\variant.hpp(355,1): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+  server.cpp
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\proton\variant.hpp(322,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\proton\variant.hpp(339,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\proton\variant.hpp(355,1): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+  utils.cpp
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\proton\variant.hpp(322,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\proton\variant.hpp(339,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\proton\variant.hpp(355,1): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+  Generating Code...
+  callbacks.c
+  compress.c
+  host.c
+  list.c
+  packet.c
+  peer.c
+  protocol.c
+  unix.c
+  win32.c
+  sandbird.c
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\sandbird\sandbird.c(520,59): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\sandbird\sandbird.c(834,54): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Modiz\Desktop\enetproxy-main\proxy\sandbird\sandbird.c(897,20): warning C4244: 'function': conversion from 'sb_Socket' to 'int', possible loss of data
+  Generating Code...
+server.obj : error LNK2005: "bool events::out::taxsystem" (?taxsystem@out@events@@3_NA) already defined in events.obj
+server.obj : error LNK2005: "bool events::out::fastmmode" (?fastmmode@out@events@@3_NA) already defined in events.obj
+server.obj : error LNK2005: "bool events::out::dicemod" (?dicemod@out@events@@3_NA) already defined in events.obj
+server.obj : error LNK2005: "bool events::out::worldbanjoinmod" (?worldbanjoinmod@out@events@@3_NA) already defined in events.obj
+server.obj : error LNK2005: "bool events::out::autopull" (?autopull@out@events@@3_NA) already defined in events.obj
+server.obj : error LNK2005: "bool events::out::fastdrop" (?fastdrop@out@events@@3_NA) already defined in events.obj
+server.obj : error LNK2005: "bool events::out::fasttrash" (?fasttrash@out@events@@3_NA) already defined in events.obj
+server.obj : error LNK2005: "bool events::out::visualspin" (?visualspin@out@events@@3_NA) already defined in events.obj
+server.obj : error LNK2005: "bool events::out::wltroll" (?wltroll@out@events@@3_NA) already defined in events.obj
+server.obj : error LNK2005: "bool events::out::wrenchpull" (?wrenchpull@out@events@@3_NA) already defined in events.obj
+server.obj : error LNK2005: "bool events::out::autoacc" (?autoacc@out@events@@3_NA) already defined in events.obj
+server.obj : error LNK2005: "bool events::out::autounacc" (?autounacc@out@events@@3_NA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::yuzde" (?yuzde@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::test" (?test@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::aa" (?aa@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::wlx" (?wlx@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::wly" (?wly@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::uidz" (?uidz@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::setx" (?setx@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::sety" (?sety@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::id" (?id@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::doorid" (?doorid@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::posx" (?posx@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::posy" (?posy@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::ruletsayi" (?ruletsayi@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::iditemm" (?iditemm@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::loggedin" (?loggedin@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::type2" (?type2@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "bool events::out::autohosts" (?autohosts@out@events@@3_NA) already defined in events.obj
+server.obj : error LNK2005: "bool events::out::dicespeed" (?dicespeed@out@events@@3_NA) already defined in events.obj
+server.obj : error LNK2005: "bool events::out::visdice" (?visdice@out@events@@3_NA) already defined in events.obj
+server.obj : error LNK2005: "int events::out::sayi" (?sayi@out@events@@3HA) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::saveworld" (?saveworld@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::packets" (?packets@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::dc" (?dc@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::bnn" (?bnn@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::kck" (?kck@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::pll" (?pll@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::ip" (?ip@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::type" (?type@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::xyposition" (?xyposition@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::name" (?name@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::nid" (?nid@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::currentuid" (?currentuid@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::unaccesspaketi" (?unaccesspaketi@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::country" (?country@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::deneme" (?deneme@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::autopullsayi" (?autopullsayi@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::mode" (?mode@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+server.obj : error LNK2005: "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > events::out::owneruid" (?owneruid@out@events@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A) already defined in events.obj
+C:\Users\Modiz\Desktop\enetproxy-main\x64\Debug\proxy.exe : fatal error LNK1169: one or more multiply defined symbols found
