@@ -186,12 +186,25 @@ bool events::out::generictext(std::string packet) {
                     g_server->send(false, "action|wrench\n|netid|" + std::to_string(player.netid));
             }
             return true;
-        } else if (find_command(chat, "proxy")) {
-            gt::send_log(
-                "/tp [name] (teleports to a player in the world), /ghost (toggles ghost, you wont move for others when its enabled), /uid "
-                "[name] (resolves name to uid), /flag [id] (sets flag to item id), /name [name] (sets name to name)");
-            return true;
         } 
+         else if (find_command(chat, "proxy")) {
+            std::string paket;
+            paket =
+                "\nadd_label_with_icon|big|Proxy Commands|left|32|"
+                "\nadd_spacer|small"
+                "\nadd_textbox|`9/proxy `#(shows commands)|left|2480|"
+                "\nadd_textbox|`9/tp [name] (teleports to a player in the world)|left|2480|"
+                "\nadd_textbox|`9/ghost (toggles ghost, you wont move for others when its enabled)|left|2480|"
+                "\nadd_textbox|`9/uid [name] (resolves name to uid)|left|2480|"
+                "\nadd_textbox|`9/flag [id] (sets flag to item id)|left|2480|"
+                "\nadd_textbox|`9/name [name] (sets name to name)|left|2480|"
+                "\nadd_quick_exit|"
+                "\nend_dialog|end|Cancel|Okay|";
+            variantlist_t liste{ "OnDialogRequest" };
+            liste[1] = paket;
+            g_server->send(true, liste);
+            return true;
+        }
         return false;
     }
 
@@ -260,7 +273,42 @@ bool events::out::state(gameupdatepacket_t* packet) {
         return true;
     return false;
 }
-
+std::string paket = "add_label_with_icon|big|`5The Proxy Gazette``|left|5016|"
+"\nadd_spacer|small|"
+"\nadd_textbox|`wApril 11th: `5Proxy made by ModizX#4309 & KiNG'#7409 | left | "
+"\nadd_spacer|small|"
+"\nadd_textbox|All Commands: |left|"
+"\nadd_spacer|small|"
+"\nadd_textbox|`9/proxy `#(shows commands)|left|2480|"
+"\nadd_textbox|`9/world `#(shows commands)|left|2480|"
+"\nadd_textbox|`9/bypassvault `#(bypassing safe vault)|left|2480|"
+"\nadd_textbox|`9/bypassdoor `#(bypassing the doorid /setid (set door id))|left|2480|"
+"\nadd_textbox|`9/bypasspath `#(bypassing the path marker)|left|2480|"
+"\nadd_textbox|`9/tp [name] `#(teleports to a player in the world) |left|2480|"
+"\nadd_textbox|`9/ghost `#(toggles ghost, you wont move for others when its enabled)|left|2480|"
+"\nadd_textbox|`9/uid [name] `#(resolves name to uid)|left|2480|"
+"\nadd_textbox|`9/flag [id] `#(sets flag to item id)|left|2480|"
+"\nadd_textbox|`9/warp [world] `#(warp's the world)|left|2480|"
+"\nadd_textbox|`9/skin [id] `#(sets your skin)|left|2480|"
+"\nadd_textbox|`9/name [name] `#(sets name to name)|left|2480|"
+"\nadd_textbox|`9/options `#(features)|left|2480|"
+"\nadd_textbox|`9/country `#(Changes your country flag)|left|2480|"
+"\nadd_textbox|`9/whitelist `#(Show's Whitelisted Players)|left|2480|"
+"\nadd_textbox|`9/blacklist `#(Show's Blacklisted Players)|left|2480|"
+"\nadd_textbox|`9/server `#(You Can Change Server Informations)|left|2480|"
+"\nadd_textbox|`9/account `#(See your account credentials)|left|2480|"
+"\nadd_textbox|`9/setuid `#(set uid for world lock troll)|left|2480|"
+"\nadd_textbox|`9/wlt `#(open/close worldlock troll)|left|2480|"
+"\nadd_textbox|`9/crash `#(You can Crash World)|left|2480|"
+"\nadd_textbox|`9/vault `#(Safe Vault Bypass)|left|2480|"
+"\nadd_textbox|`9/token `#(token exploit you need mentorship ticket you can buy with /buym and set netid to /setnid)|left|2480|"
+"\nadd_textbox|`9/name [name] `#(Change's your gt name visual)|left|2480|"
+"\nadd_textbox||\nadd_spacer|small|"
+"\nadd_textbox||\nadd_spacer|small|"
+"\nadd_textbox||\nadd_spacer|small|"
+"\nadd_quick_exit|"
+"\nset_survey_enabled|1"
+"\nend_dialog|gazette||OK|";
 bool events::in::variantlist(gameupdatepacket_t* packet) {
     variantlist_t varlist{};
     auto extended = utils::get_extended(packet);
@@ -290,7 +338,7 @@ bool events::in::variantlist(gameupdatepacket_t* packet) {
         case fnv32("OnSendToServer"): g_server->redirect_server(varlist); return true;
 
         case fnv32("OnConsoleMessage"): {
-            varlist[1] = "`4[PROXY]`` " + varlist[1].get_string();
+            varlist[1] = "`b[`4LT-PROXY`b]`` " + varlist[1].get_string();
             g_server->send(true, varlist);
             return true;
         } break;
@@ -321,6 +369,11 @@ bool events::in::variantlist(gameupdatepacket_t* packet) {
                     return true;
                 }
             }
+        }
+        if (content.find("add_label_with_icon|big|`wThe Growtopia Gazette``|left|5016|") != -1) {
+            varlist[1] = paket;
+            g_server->send(true, varlist);
+            return true;
         }
         if (fasttrash == true) {
             std::string itemid = content.substr(content.find("embed_data|itemID|") + 18, content.length() - content.find("embed_data|itemID|") - 1);

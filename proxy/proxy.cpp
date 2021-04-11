@@ -13,9 +13,9 @@ server* g_server = new server();
 
 int main() {
 #ifdef _WIN32
-    SetConsoleTitleA("proxy by ama");
+    SetConsoleTitleA("Proxy made by Modiz");
 #endif
-    printf("enet proxy by ama\n");
+    printf("Enet proxy by Modiz And King\n");
 
     std::ifstream vr;
     vr.open("version.txt");
@@ -32,7 +32,7 @@ int main() {
 
     std::thread http(http::run, "127.0.0.1", "17191");
     http.detach();
-    printf("HTTP server is running.\n");
+    printf("Server is running.\n");
 
     enet_initialize();
     if (g_server->start()) {
